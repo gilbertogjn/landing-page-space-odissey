@@ -1,5 +1,96 @@
-$bgColor: blue;
+@use 'vars';
+@use 'header';
+@use 'hero';
+@use 'watch';
+@use 'about';
+@use 'videos';
+@use 'footer';
+
+@font-face {
+    font-family: Futura;
+    src: url(../../assets/fonts/futura_light_bt.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(../../assets/fonts/futura_heavy_font.ttf);
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: Futura, sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: vars.$bgColor;
+}
+
+section {
+    padding: 70px 16px 80px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.text--dark {
+    font-size: 18px;
+    color: silver;
+    line-height: 28px;
+}
+
+.title--dark {
+    font-size: 34px;
+    color: vars.$titleDark;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+
+    div {
+        background-color: vars.$titleDark;
+        height: 25px;
+        width: 12px;
+        margin-right: 10px;
+    }
+}
+
+.title--dark--small {
+    font-size: 24px;
+    color: vars.$titleDark;
+}
+
+.text--light {
+    font-size: 18px;
+    color: vars.$bgColor;
+}
+
+.title--light {
+    font-size: 34px;
+    font-weight: bold;
+    color: vars.$bgColor;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+
+    div {
+        background-color: vars.$bgColor;
+        height: 25px;
+        width: 12px;
+        margin-right: 10px;
+    }
+}
+
+.title--light--small {
+    font-size: 24px;
 }

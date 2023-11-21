@@ -1,12 +1,254 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2001 - Uma Odisséia no Espaço</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/dist/images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <h1>Olá</h1>
+    <section class="header">
+        <nav class="header__nav">
+            <h1>
+                <a href="#hero">
+                    <svg class="header__nav__icon" focusable="false" viewBox="0 0 25 32" xmlns="http://www.w3.org/2000/svg"><path d="M18.796 13.65c-.698 0-1.332.268-3.286 1.67v7.546c3.387-3.806 4.352-6.41 4.352-7.746-.004-.935-.435-1.47-1.066-1.47zm.266-5.008c0-1.34-1.527-2.438-3.552-2.571v6.978c2.555-1.502 3.552-3.008 3.552-4.407zm6.014-2.961c-.033-.134-.067-.184-.134-.2l-2.394-.636-.332-1.369c-.017-.067-.034-.117-.1-.133l-2.458-.668-.299-1.303a.183.183 0 00-.133-.167L12.843.015a.855.855 0 00-.316 0l-6.385 1.19a.183.183 0 00-.133.167l-.3 1.303-2.457.667c-.067.016-.083.066-.1.133l-.332 1.37-2.388.635c-.066.017-.1.067-.133.2A17.246 17.246 0 000 8.92c0 9.62 4.983 17.97 12.423 22.946a.332.332 0 00.533 0C20.396 26.89 25.38 18.539 25.38 8.921a17.32 17.32 0 00-.304-3.24zM11.753 27.44c0 .068-.067.1-.133.034-1.827-2.104-3.055-4.675-3.886-7.48l-1.262.804c-.332.234-.597.134-.8-.233-1.693-3.006-2.789-7.949-2.888-11.42a.603.603 0 01.166-.434 15.78 15.78 0 011.46-1.536c.1-.1.2-.034.2.133 0 4.274.73 8.247 1.893 10.853.1.2.2.2.333.1l.365-.234c-.698-3.106-1.096-7.246-.997-12.021 0-.168.034-.234.133-.3.51-.32 1.042-.599 1.594-.836.166-.067.2-.033.2.1-.095 6.945.472 11.752 1.699 15.592.033.1.132.066.132-.034-.067-1.402-.067-2.637-.067-4.14L9.83 4.4c0-.133.033-.2.166-.233.546-.136 1.1-.237 1.66-.301a.089.089 0 01.1.1l-.003 23.475zm1.993.034c-.067.067-.133.034-.133-.033V3.968a.09.09 0 01.099-.1c4.45.3 7.306 2.17 7.306 4.875a4.548 4.548 0 01-1.162 3.036c1.46.401 2.026 1.504 2.026 2.973.002 2.605-1.89 6.913-8.134 12.723h-.002z" fill="#FFF" fill-rule="nonzero"></path></svg>
+                </a>
+            </h1>
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item">
+                    <a href="#watch">Assistir</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="#videos">Vídeos</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="hero" id="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__title--hero">
+                2001: Uma Odisséia no Espaço
+            </h1>
+            <a class="hero__content__link-text" href="#watch">Assita Agora</a>
+        </div>
+    </section>
+
+    <section class="watch" id="watch">
+        <div class="watch__container container">
+            <h2 class="watch__title title--light">
+                <div></div>
+                <span>Assista</span>
+            </h2>
+            <h3 class="watch__subtitle title--light--small">
+                Compre/Alugue - Digital
+            </h3>
+            <ul class="watch__list">
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/apple-tv-logo.jpg" alt="Apple Tv">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/GooglePlay_500x200.png" alt="Google Play">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/Microsoft_500x200.png" alt="Microsoft">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/PrimeVideo_500x200.png" alt="Prime Video">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/youtube_retailer.jpg" alt="YouTube">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/FandangoNow_500x200.png" alt="Fandango Now">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/MoviesAnywhere_500x200.png" alt="Movies Anywhere">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/digital/Vudu_500x200.png" alt="Vudu">
+                    </a>
+                </li>
+            </ul>
+            <br>
+            <h3 class="watch__subtitle title--light--small">
+                Compre - Em Disco
+            </h3>
+            <ul class="watch__list">
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/disc/amazon_500x200.png" alt="Amazon">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/disc/walmart_500x200.png" alt="Walmart">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/disc/best_buy_500x200.png" alt="Best Buy">
+                    </a>
+                </li>
+                <li class="watch__list__item">
+                    <a href="#">
+                        <img src="./dist/images/assista/disc/target.jpg" alt="Target">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section lang="about" id="about">
+        <div class="about__container container">
+            <h2 class="about__title title--dark">
+                <div></div>
+                <span>Sobre</span>
+            </h2>
+            <div class="about__content">
+                <div class="about__content__text">
+                    <p class="text--dark">
+                        Stanley Kubrick redefiniu os limites do cinema em sua obra-prima clássica de ficção científica, uma contemplação sobre a natureza da humanidade, 2001: Uma Odisséia no Espaço. Terra da Idade da Pedra: Na presença de um misterioso obelisco negro, os pré-humanos descobrem o uso de ferramentas – e armas – dando violentamente os primeiros passos em direção à inteligência. 1999: Na lua da Terra, os astronautas descobrem outro misterioso obelisco negro. 2001: Entre a Terra e Júpiter, o computador inteligente da nave espacial comete um erro que mata a maior parte da tripulação humana – e depois continua a matar para esconder o seu erro. Além do Tempo: O único sobrevivente da jornada a Júpiter ascende ao próximo nível da humanidade.
+                    </p>
+                    <ul class="about__content__text__list">
+                        <li class="about__content__text__list__item text--dark">
+                            <h3 class="title--dark--small">Lançamento</h3>
+                            03 de abril de 1968
+                        </li>
+                        <li class="about__content__text__list__item text--dark">
+                            <h3 class="title--dark--small">Avaliação</h3>
+                            ★★★★★
+                        </li>
+                        <li class="about__content__text__list__item text--dark">
+                            <h3 class="title--dark--small">Gênero</h3>
+                            Ação/Aventura, Drama, Sci-Fi/Fantasia
+                        </li>
+                        <li class="about__content__text__list__item text--dark">
+                            <h3 class="title--dark--small">Siga</h3>
+                            <a href="#">
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="about__img" src="./dist/images/about-img.webp" alt="Capa do filme 2001">
+            </div>
+        </div>
+    </section>
+
+    <section class="videos" id="videos">
+        <div class="container">
+            <h2 class="title--light">
+                <div></div>
+                <span>Vídeos</span>
+            </h2>
+        </div>
+            <ul class="videos__list">
+                <li class="videos__list__item" id="video-frame">
+                    <iframe width="454" height="270" src="https://www.youtube.com/embed/kR2r-A9H3Kg" title="2001: A Space Odyssey | 4K Trailer | Warner Bros. Entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="text--light">2001: A Space Odyssey | 4K Trailer | Warner Bros. Entertainment</p>
+                </li>
+                <li class="videos__list__item">
+                    <iframe width="454" height="270" src="https://www.youtube.com/embed/XpnMf7Bvpj0" title="2001: A Space Odyssey | Vision of a Future Passed:The Prophecy of 2001 | Warner Bros. Entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="text--light">2001: A Space Odyssey | Vision of a Future Passed:The Prophecy of 2001 | Warner Bros. Entertainment</p>
+                </li>
+                <li class="videos__list__item">
+                    <iframe width="454" height="270" src="https://www.youtube.com/embed/gW7-VnIqKhM" title="2001: A Space Odyssey | On The Shoulders of Kubrick: The Legacy of 2001 | Warner Bros. Entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="text--light">2001: A Space Odyssey | On The Shoulders of Kubrick: The Legacy of 2001 | Warner Bros. Entertainment</p>
+                </li>
+                <li class="videos__list__item">
+                    <iframe width="454" height="270" src="https://www.youtube.com/embed/eeGI1FoySaE" title="2001: A Space Odyssey | A Look BehindThe Future | Warner Bros. Entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="text--light">2001: A Space Odyssey | A Look BehindThe Future | Warner Bros. Entertainment</p>
+                </li>
+                <li class="videos__list__item">
+                    <iframe width="454" height="270" src="https://www.youtube.com/embed/oR_e9y-bka0" title="2001: A SPACE ODYSSEY - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="text--light">2001: A SPACE ODYSSEY - Trailer</p>
+                </li>
+            </ul>
+            <button class="videos__scroll-right">></button>
+            <button class="videos__scroll-left"><</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__credits">
+            <svg class="footer__icon" focusable="false" viewBox="0 0 25 32" xmlns="http://www.w3.org/2000/svg"><path d="M18.796 13.65c-.698 0-1.332.268-3.286 1.67v7.546c3.387-3.806 4.352-6.41 4.352-7.746-.004-.935-.435-1.47-1.066-1.47zm.266-5.008c0-1.34-1.527-2.438-3.552-2.571v6.978c2.555-1.502 3.552-3.008 3.552-4.407zm6.014-2.961c-.033-.134-.067-.184-.134-.2l-2.394-.636-.332-1.369c-.017-.067-.034-.117-.1-.133l-2.458-.668-.299-1.303a.183.183 0 00-.133-.167L12.843.015a.855.855 0 00-.316 0l-6.385 1.19a.183.183 0 00-.133.167l-.3 1.303-2.457.667c-.067.016-.083.066-.1.133l-.332 1.37-2.388.635c-.066.017-.1.067-.133.2A17.246 17.246 0 000 8.92c0 9.62 4.983 17.97 12.423 22.946a.332.332 0 00.533 0C20.396 26.89 25.38 18.539 25.38 8.921a17.32 17.32 0 00-.304-3.24zM11.753 27.44c0 .068-.067.1-.133.034-1.827-2.104-3.055-4.675-3.886-7.48l-1.262.804c-.332.234-.597.134-.8-.233-1.693-3.006-2.789-7.949-2.888-11.42a.603.603 0 01.166-.434 15.78 15.78 0 011.46-1.536c.1-.1.2-.034.2.133 0 4.274.73 8.247 1.893 10.853.1.2.2.2.333.1l.365-.234c-.698-3.106-1.096-7.246-.997-12.021 0-.168.034-.234.133-.3.51-.32 1.042-.599 1.594-.836.166-.067.2-.033.2.1-.095 6.945.472 11.752 1.699 15.592.033.1.132.066.132-.034-.067-1.402-.067-2.637-.067-4.14L9.83 4.4c0-.133.033-.2.166-.233.546-.136 1.1-.237 1.66-.301a.089.089 0 01.1.1l-.003 23.475zm1.993.034c-.067.067-.133.034-.133-.033V3.968a.09.09 0 01.099-.1c4.45.3 7.306 2.17 7.306 4.875a4.548 4.548 0 01-1.162 3.036c1.46.401 2.026 1.504 2.026 2.973.002 2.605-1.89 6.913-8.134 12.723h-.002z" fill="#FFF" fill-rule="nonzero"></path></svg>
+            <p class="text--dark">
+                TM & © 2023 Warner Bros. Entertainment Inc. Todos os direitos reservados.
+            </p>
+        </div>
+        <div class="footer__socials">
+            <p class="text--dark">Siga-nos</p>
+            <ul class="footer__list">
+                <li class="footer__list__item">
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">
+                        <i class="bi bi-pinterest"></i>
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./dist/scripts/main.js"></script>
 </body>
+
 </html>

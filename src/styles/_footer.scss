@@ -1,0 +1,73 @@
+@use 'vars';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    &__credits {
+        @media (max-width: 768px) {
+            p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+    
+    &__socials {
+        @media (max-width: 768px) {
+
+            p {
+                display: none;
+            }
+
+            .footer__list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: end;
+            }
+        }
+    }
+    
+    &__icon {
+        height: 32px;
+        margin-right: 12px;
+
+        @media (max-width: 768px) {
+            height: 48px;
+        }
+    }
+
+    div:nth-child(1),
+    div:nth-child(2) {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        margin-left: 12px;
+        display: flex;
+        gap: 12px;
+
+        &__item {
+
+            a {
+                text-decoration: none;
+            }
+
+            i {
+                color: vars.$textDark;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

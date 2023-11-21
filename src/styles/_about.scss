@@ -1,0 +1,52 @@
+@use 'vars';
+
+.about {
+
+    &__content {
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        &__text {
+
+            &__list {
+                margin-top: 24px;
+
+                &__item {
+                    margin-bottom: 16px;
+
+                    i {
+                        color: vars.$textDark;
+                        margin-right: 8px;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+
+                        h3 {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__img {
+        width: 360px;
+        margin-left: 44px;
+        border-radius: 4px;
+        
+        @media (max-width: 768px) {
+            margin: 0;
+            width: 100%;
+            margin-top: 32px;
+        }
+    }
+}

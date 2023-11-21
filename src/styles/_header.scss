@@ -1,0 +1,44 @@
+@use 'vars';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 16px;
+    background-color: rgba(vars.$bgColor, .92);
+    margin-top: -67px;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            line-height: 0;
+        }
+
+        &__icon {
+            height: 38px;
+
+            @media (max-width: 768px) {
+                height: 30px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            gap: 20px;
+
+            &__item {
+                a {
+                    color: vars.$textDark;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
